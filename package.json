@@ -1,13 +1,25 @@
 {
-  "name": "figures-js",
+  "name": "shapes-tetrahedron-ts",
   "version": "1.0.0",
-  "description": "Geometric figures with Repository, Specification, Warehouse (Singleton+Observer) patterns",
-  "main": "src/demo.js",
+  "description": "Task I.6 - Point and Tetrahedron in TypeScript",
   "scripts": {
-    "test": "jest",
-    "start": "node src/demo.js"
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "test": "jest --runInBand",
+    "lint": "eslint \"src/**/*.ts\" \"tests/**/*.ts\""
+  },
+  "dependencies": {
+    "pino": "^9.0.0"
   },
   "devDependencies": {
-    "jest": "^29.7.0"
+    "@types/jest": "^29.5.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
+    "@typescript-eslint/parser": "^8.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.0",
+    "typescript": "^5.0.0"
   }
 }
